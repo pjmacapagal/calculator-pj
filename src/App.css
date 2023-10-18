@@ -1,38 +1,70 @@
 .App {
+  box-sizing: border-box;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #C3CEDA;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color:dimgray;
+}
+
+.CalcContainer {
+  width: 500px;
+  margin:auto;
+  text-align: center;
+  padding: 50px;
+}
+
+.CalcDisplay {
+  border: 1px solid #505050;
+  height: 40px;
+  font-size: 2em;
+  text-align: right;
+  padding:10px;
+  background: #505050;
+  color:#F5F5E9;
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+
+.ButtonContainer {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.ButtonContainer > button {
+  font-size: 2em;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #F2F1F0;
+  background-color: #FF9500;
+  border: 1px solid #1C1C1C;
+  border-radius: 4px;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.NumButton {
+  color: #FFF1F0 !important;
+  background-color: #1C1C1C !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ClearButton {
+  color: #FF9500 !important;
+  background-color: #1C1C1C !important;
+}
+
+.SurnameButton {
+  font-size: 2em;
+  justify-content: center;
+  color: #F2F1F0;
+  background-color: #FF9500;
+  border: 1px solid #1C1C1C;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+.NumButtonPJ {
+  color: #FFF1F0 !important;
+  background-color: #1C1C1C !important;
+  font-size: 40px;
+  margin-top: 50px;
 }
